@@ -47,36 +47,39 @@ header {
   background: url(./imagens/fundoTipos.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px;
+  background-size: cover;
   height: 800px;
   text-align: center; }
   .tipos-titulo {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 600; }
   .tipos-card {
     background-color: #AFDEA1;
     padding: 10px;
-    width: 80vw;
+    width: 70%;
     height: 60vh;
     box-shadow: 10px 10px 4px rgba(94, 94, 94, 0.5);
     margin-bottom: 20px;
+    position: relative;
+    left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    border-radius: 10px; }
     .tipos-card-imagem {
       width: 80%;
       height: 50%;
       border: 3px solid black;
       object-fit: cover; }
     .tipos-card-titulo {
-      font-size: 26px;
+      font-size: 2rem;
       font-weight: 600;
       font-family: "IBM Plex Mono", monospace;
       margin: 10px 0; }
     .tipos-card-texto {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 400;
       font-family: "Inter", sans-serif; }
 
@@ -87,13 +90,12 @@ header {
   background-position-x: center;
   height: 700px; }
   .beneficios-titulo {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 600;
     font-family: "IBM Plex Mono", monospace; }
   .beneficios-lista {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     height: 80%; }
     .beneficios-lista-item {
@@ -101,13 +103,15 @@ header {
       padding: 15px;
       background-color: #a1da90;
       box-shadow: 10px 10px 4px rgba(49, 49, 49, 0.5);
-      width: 80%; }
+      width: 80%;
+      position: relative;
+      left: 5%; }
       .beneficios-lista-item:hover {
         background-color: #87eb69;
-        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
         transition: 0.25s; }
       .beneficios-lista-item-subtitulo {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         font-family: "Inter", sans-serif; }
 
@@ -117,11 +121,14 @@ header {
   align-items: center;
   text-align: center;
   gap: 25px;
-  height: 500px; }
+  height: 500px;
+  margin-bottom: 20px; }
   .desafios-titulo {
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 600;
     font-family: "IBM Plex Mono", monospace; }
+  .desafios-video {
+    height: 80%; }
 
 .footer-container {
   display: flex;
@@ -129,12 +136,70 @@ header {
   align-items: center;
   background-color: #AFDEA1;
   padding: 10px 0;
-  height: 10vh; }
+  position: fixed;
+  border-top: 1px solid black;
+  bottom: 0; }
   .footer-container-logo {
-    width: 40%; }
+    width: 30%; }
   .footer-container-link {
     text-decoration: none;
+    background-color: #c6f1b8;
     color: black;
-    font-size: 26px;
+    border: 1px solid black;
+    padding: 1%;
+    box-shadow: 10px 10px 4px rgba(49, 49, 49, 0.5);
+    font-size: 1rem;
     font-weight: 600;
     font-family: "IBM Plex Mono", monospace; }
+    .footer-container-link:hover {
+      background-color: #9eee83;
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+      transition: 0.25s; }
+
+.lista-opcoes {
+  display: block; }
+
+.opcoes {
+  display: none; }
+
+@media (min-width: 576px) {
+  .tipos-card {
+    width: 60%;
+    left: 20%; }
+    .tipos-card-imagem {
+      width: 90%;
+      height: 60%; }
+  .beneficios-lista-item {
+    padding: 30px; }
+    .beneficios-lista-item-subtitulo {
+      font-size: 2rem; } }
+
+@media (min-width: 992px) {
+  .lista-opcoes {
+    display: none; }
+  .opcoes {
+    display: block; }
+  .nav-item-links {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: none;
+    color: black; }
+  .header-titulo {
+    font-size: 2rem; }
+  .header-texto {
+    font-size: 1.8rem; }
+  .desafios {
+    height: 800px; }
+  .footer-container {
+    height: 10vh; }
+    .footer-container-link {
+      font-size: 1.5rem; } }
+
+@media (min-width: 1200) {
+  footer {
+    padding: 20px 0; }
+    footer-link {
+      font-size: 1.5rem; }
+    footer-logo {
+      height: auto; } }
