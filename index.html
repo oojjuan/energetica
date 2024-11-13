@@ -5,40 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energetica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="./imagens/image.png">
+    <link rel="icon" href="./imagens/favicon.png">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="container-fluid">
-    <nav id="menu" class="header row">
+    <nav id="menu" class="navegacao row">
         <ul class="nav">
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <img class="header-logo" src="./imagens/logo.png" alt="Logo Energetica">
+                    <img class="navegacao-logo" src="./imagens/logo.png" alt="Logo Energetica" width="200px" height="40px">
                 </a>
             </li>
             <li class="nav-item dropdown">
                 <img class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" src="./imagens/menu-hamburguer.png" alt="Menu">
                 <ul class="dropdown-menu">
                     <li><a href="#introducao" class="dropdown-item">Introdução</a></li>
-                    <li><a href="" class="dropdown-item">Tipos</a></li>
-                    <li><a href="" class="dropdown-item">Benefícios</a></li>
-                    <li><a href="" class="dropdown-item">Desafios</a></li>
+                    <li><a href="#tipos" class="dropdown-item">Tipos</a></li>
+                    <li><a href="#beneficios" class="dropdown-item">Benefícios</a></li>
+                    <li><a href="#desafios" class="dropdown-item">Desafios</a></li>
                 </ul>
             </li>
         </ul>
     
     </nav>
     
-    <header id="introducao" class="row">Introdução</header>
+    <header id="introducao" class="row">
+        <h1 class="header-titulo">AS ENERGIAS QUE IRÃO SALVAR A VIDA NO PLANETA</h1>
+        <img src="./imagens/energiaLimpa.png" alt="Energias limpas" class="header-imagem">
+        <p class="header-texto">Ao mesmo tempo que a energia é algo essencial para viver, também esta lentamente destruindo a vida na terra. Entretanto, existe alguns tipos de energia que minimizam os danos na terra.</p>
+    </header>
     
-    <section id="tipos" class="row">Tipos de energia</section>
+    <section id="tipos" class="tipos row">
+        <h2 class="tipos-titulo">TIPOS DE ENERGIA</h2>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="tipos-card">
+                    <img class="tipos-card-imagem" src="./imagens/cardEolica.png" class="d-block w-100" alt="Energia Eolica">
+                    <h1 class="tipos-card-titulo">Eólica</h1>
+                    <p class="tipos-card-texto">Produzida através das condições do vento, onde eles giram os moinhos gigantes, que assim geram energia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tipos-card">
+                    <img class="tipos-card-imagem" src="./imagens/cardHidro.png" class="d-block w-100" alt="Energia Hidrelétrica">
+                    <h1 class="tipos-card-titulo">Hidrelétrica</h1>
+                    <p class="tipos-card-texto">A energia é gerada a partir da força da água, um recurso natural renovável.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tipos-card">
+                    <img class="tipos-card-imagem" src="./imagens/cardSolar.png" class="d-block w-100" alt="Energia Solar">
+                    <h1 class="tipos-card-titulo">Solar</h1>
+                    <p class="tipos-card-texto">Utilizando painéis solares, durante o dia eles geram energia através dos raios solares que batem nas suas placas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tipos-card">
+                    <img class="tipos-card-imagem" src="./imagens/cardOceanica.png" class="d-block w-100" alt="Energia Oceânica">
+                    <h1 class="tipos-card-titulo">Oceânica</h1>
+                    <p class="tipos-card-texto">Com base na movimentação das ondas e aumento da maré, é gerado energia com a ajuda do oceano.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
     
-    <article id="beneficios" class="row">Benefícios</article>
+    <article id="beneficios" class="row">
+        <div class="beneficios">
+            <h1 class="beneficios-titulo">BENEFÍCIOS</h1>
+            <ul class="beneficios-lista">
+                <li class="beneficios-lista-item">
+                    <h2 class="beneficios-lista-item-subtitulo">Mínimo de impacto para o meio ambiente</h2>
+                </li>
+                <li class="beneficios-lista-item">
+                    <h2 class="beneficios-lista-item-subtitulo">Utiliza recursos naturais</h2>
+                </li>
+                <li class="beneficios-lista-item">
+                    <h2 class="beneficios-lista-item-subtitulo">Boa parte das energias são renováveis</h2>
+                </li>
+            </ul>
+        </div>
+    </article>
     
-    <section id="desafios" class="row">Desafios</section>
+    <section id="desafios" class="desafios row">
+        <h1 class="desafios-titulo">DESAFIOS</h1>
+        <iframe src="https://www.youtube.com/embed/A66hMEkWubA" class="desafios-video" height="400px"></iframe>
+    </section>
     
-    <footer id="footer" class="row">Footer</footer>
+    <footer id="footer" class="row">
+        <div class="footer-container">
+            <img class="footer-container-logo" src="./imagens/logo.png" alt="Logo Energetica rodape">
+            <a class="footer-container-link" href="#menu">Voltar ao topo</a>
+        </div>
+    </footer>
 
 
 
